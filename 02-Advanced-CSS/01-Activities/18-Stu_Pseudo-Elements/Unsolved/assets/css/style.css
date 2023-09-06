@@ -62,7 +62,7 @@ article p {
   /* display:inline; */
   position: relative;
   text-decoration: underline;
-  cursor: not-allowedcd..;
+  cursor: not-allowed;
 
 }
 #tooltip:after{
