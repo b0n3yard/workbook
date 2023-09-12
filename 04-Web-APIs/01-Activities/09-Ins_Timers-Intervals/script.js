@@ -4,13 +4,18 @@ var timeEl = document.querySelector(".time");
 // Selects element by id
 var mainEl = document.getElementById("main");
 
-var secondsLeft = 10;
+var secondsLeft = 30;
+
 
 function setTime() {
   // Sets interval in variable
   var timerInterval = setInterval(function() {
     secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+    var minset = Math.floor(secondsLeft / 60);
+    var secset = secondsLeft % 60;
+    console.log(secset)
+    // timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+    timeEl.textContent = minset + ':' + secset;
 
     if(secondsLeft === 0) {
       // Stops execution of action at set interval
