@@ -36,7 +36,7 @@ function displayMessage() {
       mainEl.textContent = words[wordCount];
       wordCount++;
     }
-  }, 1000);
+  }, 250);
 }
 
 countdown();
